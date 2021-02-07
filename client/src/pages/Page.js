@@ -1,44 +1,7 @@
 import React from "react";
-// import PropTypes from "prop-types";
 import styled from "styled-components/macro";
 
-const PageContainer = styled.div`
-  section {
-    font-size: 14px;
-    line-height: 24px;
-    padding: 48px 20px;
-    margin: 0 auto;
-    max-width: 600px;
-    color: #333;
-  }
-
-  h2 {
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 1;
-    margin: 0 0 4px;
-    display: inline-block;
-    vertical-align: top;
-  }
-
-  p {
-    margin: 1em 0;
-  }
-
-  a {
-    text-decoration: none;
-    color: #1ea7fd;
-  }
-
-  ul {
-    padding-left: 30px;
-    margin: 1em 0;
-  }
-
-  li {
-    margin-bottom: 8px;
-  }
-`;
+const PageContainer = styled.div``;
 
 const Page = () => (
   <PageContainer>

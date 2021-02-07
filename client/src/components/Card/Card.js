@@ -12,16 +12,13 @@ const Cardcontainer = styled.div`
 
 const CardInside = styled.div`
   display: flex;
-  font-family: var(--titleFont);
+  font-family: "Yanone Kaffeesatz", sans-serif;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: var(--primary-color);
   border-radius: 20px;
-  /* border: none; */
-  /* color: darkblue; */
-  /* font-size: 1rem; */
-  /* text-align: center; */
+
   text-align: center;
   height: 4rem;
   box-shadow: inset 10px 5px 20px #d88d41;

@@ -6,8 +6,8 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 :root {
-  --titleFont: "Yanone Kaffeesatz", sans-serif;
-  --textFont: "Yanone Kaffeesatz", sans-serif;
+  --titleFont: 'Yanone Kaffeesatz', sans-serif;
+  --textFont: 'Yanone Kaffeesatz', sans-serif;
   --background: #ededed;
   --background-dark: #3d4849;
   --text-color: #707070;
@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
 }
 body {
   margin: 0 ;
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   background-color: var(--primary-color);
   }
  
