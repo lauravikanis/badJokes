@@ -1,12 +1,9 @@
 import React from "react";
 // import PropTypes from "prop-types";
-
-import "./page.css";
 import styled from "styled-components/macro";
 
 const PageContainer = styled.div`
   section {
-    font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     padding: 48px 20px;

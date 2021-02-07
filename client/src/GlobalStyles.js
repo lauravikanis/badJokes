@@ -5,20 +5,20 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 :root {
-  --titleFont: "'Poppins", sans-serif;
-  --textFont: "Roboto", sans-serif;
+  --titleFont: "Abel", sans-serif;
+  --textFont: "Abel", sans-serif;
   --background: #ededed;
   --background-dark: #3d4849;
   --text-color: #707070;
   --text-color-dark: #ffffff;
-  --primary-color: #0f4e8f;
-  --secondary-color: #ec9b49;
+  --primary-color: #FFA500; //orange
+  --secondary-color: #00008b ; //darkblue
   --favorite-color:#dd755d;
 }
 body {
   margin: 0 ;
-  font-family: 'Roboto', sans-serif;
-  background-color: lightgoldenrodyellow;
+  font-family: var(--titleFont);
+  background-color: var(--primary-color);
   }
  
 p{
