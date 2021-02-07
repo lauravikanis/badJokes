@@ -2,6 +2,6 @@
 
 # badJokes
 
-An App to ocollect and rmember all the bad jokes you've heard in recent times.
+An App to collect and remember all the bad jokes you've heard.
 
-## if you find a bug please open an issue
+## -> If you find a bug please open an issue
