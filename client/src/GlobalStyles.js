@@ -1,12 +1,13 @@
 import { createGlobalStyle } from "styled-components/macro";
 
 const GlobalStyle = createGlobalStyle`
+
 *,*::before,*::after{
   box-sizing: border-box;
 }
 :root {
-  --titleFont: "Abel", sans-serif;
-  --textFont: "Abel", sans-serif;
+  --titleFont: "Yanone Kaffeesatz", sans-serif;
+  --textFont: "Yanone Kaffeesatz", sans-serif;
   --background: #ededed;
   --background-dark: #3d4849;
   --text-color: #707070;
@@ -17,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
 }
 body {
   margin: 0 ;
-  font-family: var(--titleFont);
+  font-family: "Yanone Kaffeesatz", sans-serif;
   background-color: var(--primary-color);
   }
  

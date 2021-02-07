@@ -8,8 +8,8 @@ export default {
 
 const Template = (args) => <Card {...args} />;
 
-export const button = Template.bind({});
-button.args = {
+export const card = Template.bind({});
+card.args = {
   children: (
     <>
       <h2>TOUR</h2>
