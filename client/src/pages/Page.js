@@ -1,23 +1,60 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
-import Header from "../components/Header/Header";
 import "./page.css";
+import styled from "styled-components/macro";
+
+const PageContainer = styled.div`
+  section {
+    font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 48px 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    color: #333;
+  }
+
+  h2 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1;
+    margin: 0 0 4px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  p {
+    margin: 1em 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #1ea7fd;
+  }
+
+  ul {
+    padding-left: 30px;
+    margin: 1em 0;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+`;
 
 const Page = () => (
-  <article>
-    <Header />
-
+  <PageContainer>
     <section>
-      <h2>Pages in Storybook</h2>
+      <h2>This is a example Page</h2>
       <p>
-        We recommend building UIs with a{" "}
+        We recommend building UIs with a
         <a
           href="https://componentdriven.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <strong>component-driven</strong>
+          <strong> component-driven </strong>
         </a>
         process starting with atomic components and ending with pages.
       </p>
@@ -55,35 +92,8 @@ const Page = () => (
         </a>
         .
       </p>
-      <div className="tip-wrapper">
-        <span className="tip">Tip</span> Adjust the width of the canvas with the
-        <svg
-          width="10"
-          height="10"
-          viewBox="0 0 12 12"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g fill="none" fillRule="evenodd">
-            <path
-              d="M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z"
-              id="a"
-              fill="#999"
-            />
-          </g>
-        </svg>
-        Viewports addon in the toolbar
-      </div>
     </section>
-  </article>
+  </PageContainer>
 );
-Page.propTypes = {
-  user: PropTypes.shape({}),
-  onLogin: PropTypes.func,
-  onLogout: PropTypes.func,
-  onCreateAccount: PropTypes.func,
-};
 
-Page.defaultProps = {
-  user: null,
-};
 export default Page;
