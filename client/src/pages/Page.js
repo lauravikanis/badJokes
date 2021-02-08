@@ -12,16 +12,18 @@ const PageContainer = styled.div`
   height: 80vh;
 `;
 
-const Page = () => (
-  <PageContainer>
-    <Header />
-    <Card>
-      <h2>Click for random joke</h2>
-    </Card>
-    <Card>
-      <h2>Click to pick a type of joke</h2>
-    </Card>
-  </PageContainer>
-);
+const Page = () => {
+  return (
+    <PageContainer>
+      <Header />
+      <Card>
+        <h2>Click for random joke</h2>
+      </Card>
+      <Card>
+        <h2>Click to pick a type of joke</h2>
+      </Card>
+    </PageContainer>
+  );
+};
 
 export default Page;

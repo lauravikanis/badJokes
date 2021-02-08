@@ -15,12 +15,22 @@ const HeaderContainer = styled.header`
   width: 60%;
   color: var(--tertiary-color);
   width: 100%;
+
+  h1 {
+    margin: 0;
+    text-transform: none !important;
+  }
+
+  h4 {
+    margin: 0;
+    text-transform: none !important;
+  }
 `;
 const Header = () => {
   return (
     <HeaderContainer>
-      <div>Home</div>
-      <div>Logo</div>
+      <div>Submit</div>
+      <h1>badJokes 24/7</h1>
       <div>Menue</div>
     </HeaderContainer>
   );
