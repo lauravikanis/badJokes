@@ -1,58 +1,26 @@
 import React from "react";
 import styled from "styled-components/macro";
+import Card from "../components/Card/Card";
+import Header from "../components/Header/Header";
 
-const PageContainer = styled.div``;
+const PageContainer = styled.div`
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+`;
 
 const Page = () => (
   <PageContainer>
-    <section>
-      <h2>This is a example Page</h2>
-      <p>
-        We recommend building UIs with a
-        <a
-          href="https://componentdriven.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <strong> component-driven </strong>
-        </a>
-        process starting with atomic components and ending with pages.
-      </p>
-      <p>
-        Render pages with mock data. This makes it easy to build and review page
-        states without needing to navigate to them in your app. Here are some
-        handy patterns for managing page data in Storybook:
-      </p>
-      <ul>
-        <li>
-          Use a higher-level connected component. Storybook helps you compose
-          such data from the arguments of child component stories
-        </li>
-        <li>
-          Assemble data in the page component from your services. You can mock
-          these services out using Storybook.
-        </li>
-      </ul>
-      <p>
-        Get a guided tutorial on component-driven development at
-        <a
-          href="https://www.learnstorybook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Storybook
-        </a>
-        . Read more in the
-        <a
-          href="https://storybook.js.org/docs"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          docs
-        </a>
-        .
-      </p>
-    </section>
+    <Header />
+    <Card>
+      <h2>Click for random joke</h2>
+    </Card>
+    <Card>
+      <h2>Click to pick a type of joke</h2>
+    </Card>
   </PageContainer>
 );
 
