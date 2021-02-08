@@ -29,9 +29,9 @@ const HeaderContainer = styled.header`
 const Header = () => {
   return (
     <HeaderContainer>
-      <div>Submit</div>
+      <div>Backbutton</div>
       <h1>badJokes 24/7</h1>
-      <div>Menue</div>
+      <div>Submit</div>
     </HeaderContainer>
   );
 };

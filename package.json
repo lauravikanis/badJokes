@@ -11,7 +11,8 @@
     "init": "^0.1.2",
     "nodemon": "^2.0.6",
     "postinstall": "^0.7.0",
-    "prettier": "^2.2.0"
+    "prettier": "^2.2.0",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.8.1",
