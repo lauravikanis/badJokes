@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <PageContainer>
       <Card to="/random">
-        <h2>Click for random joke</h2>
+        <h2>Random Joke</h2>
       </Card>
       <Card to="/filter">
         <h2>Click to pick a type of joke</h2>
