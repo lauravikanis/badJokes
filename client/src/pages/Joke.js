@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
+import { getRandomJoke } from "../api/getRandomJoke";
 
 const JokeContainer = styled.div`
   display: flex;
@@ -9,6 +10,16 @@ const JokeContainer = styled.div`
 const Joke = () => {
   const [randomJoke, setRandomJoke] = useState(null);
 
-  return <JokeContainer>{randomJoke}</JokeContainer>;
+  async function handleClick() {
+    const randomJokeResponse = await getRandomJoke();
+    setRandomJoke(randomJokeResponse);
+  }
+
+  return (
+    <JokeContainer>
+      <button onClick={() => handleClick()}>Get Random Joke</button>
+      {randomJoke && <p>{randomJoke.joke}</p>}
+    </JokeContainer>
+  );
 };
 export default Joke;

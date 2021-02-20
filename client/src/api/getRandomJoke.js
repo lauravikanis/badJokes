@@ -1,8 +1,9 @@
-export const getJokes = async () => {
+export async function getRandomJoke() {
   const response = await fetch(`/api/randomJoke`);
-  const data = await response.json();
-
-  const randomJokeData = data;
-
-  return randomJokeData;
-};
+  if (!response.ok) {
+    const message = await response.text();
+    throw new Error(message);
+  }
+  const randomJoke = await response.json();
+  return randomJoke;
+}
