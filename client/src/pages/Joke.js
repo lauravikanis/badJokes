@@ -4,7 +4,13 @@ import { getRandomJoke } from "../api/getRandomJoke";
 
 const JokeContainer = styled.div`
   display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  height: 80vh;
+  margin-left: 20%;
+  margin-right: 20%;
 `;
 
 const Joke = () => {
