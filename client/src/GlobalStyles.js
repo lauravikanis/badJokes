@@ -34,6 +34,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   text-transform: uppercase;
 }
+
+a{
+  text-decoration:none;
+  color:var(--tertiary-color);
+}
 `;
 
 export default GlobalStyle;

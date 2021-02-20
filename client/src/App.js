@@ -1,14 +1,25 @@
 import React from "react";
-import Page from "./pages/Page";
+import Home from "./pages/Home";
 import GlobalStyle from "./GlobalStyles";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Joke from "./pages/Joke";
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <GlobalStyle />
-      <Page />
+      <Header />
+      <Switch>
+        <Route path="/random">
+          <Joke />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
       <a href="/storybook">To Storybook</a>
-    </div>
+    </Router>
   );
 }
 
