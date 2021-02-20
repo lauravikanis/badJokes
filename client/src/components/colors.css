@@ -1,0 +1,50 @@
+/* Color Theme Swatches in Hex */
+.Mode-1-hex {
+  color: #03178c;
+}
+.Mode-2-hex {
+  color: #020f59;
+}
+.Mode-3-hex {
+  color: #0433bf;
+}
+.Mode-4-hex {
+  color: #d9aa8f;
+}
+.Mode-5-hex {
+  color: #8c5845;
+}
+
+/* Color Theme Swatches in RGBA */
+.Mode-1-rgba {
+  color: rgba(2, 23, 140, 1);
+}
+.Mode-2-rgba {
+  color: rgba(1, 14, 89, 1);
+}
+.Mode-3-rgba {
+  color: rgba(3, 50, 191, 1);
+}
+.Mode-4-rgba {
+  color: rgba(216, 170, 143, 1);
+}
+.Mode-5-rgba {
+  color: rgba(140, 87, 68, 1);
+}
+
+/* Color Theme Swatches in HSLA */
+.Mode-1-hsla {
+  color: hsla(230, 96, 28, 1);
+}
+.Mode-2-hsla {
+  color: hsla(230, 96, 17, 1);
+}
+.Mode-3-hsla {
+  color: hsla(225, 96, 38, 1);
+}
+.Mode-4-hsla {
+  color: hsla(22, 49, 70, 1);
+}
+.Mode-5-hsla {
+  color: hsla(16, 34, 40, 1);
+}
