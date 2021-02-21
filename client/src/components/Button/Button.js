@@ -1,30 +1,25 @@
 import styled from "styled-components/macro";
 import PropTypes from "prop-types";
 
-const Button = styled.input`
+const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: orange;
-  border-radius: 15px;
-  border: none;
-  height: 50px;
-  margin: 15px auto;
-  color: white;
-  font-size: 1rem;
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  color: darkblue;
+  border: 2px solid var(--tertiary-color);
+  width: 60%;
+  margin: 5%;
 
   :active {
-    background-color: white;
-    color: orange;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
   }
 `;
 
 Button.propTypes = {
-  value: PropTypes.string,
-  type: PropTypes.string,
   onClick: PropTypes.func,
 };
 export default Button;
