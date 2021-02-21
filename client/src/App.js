@@ -18,7 +18,6 @@ function App() {
           <Home />
         </Route>
       </Switch>
-      <a href="/storybook">To Storybook</a>
     </Router>
   );
 }
