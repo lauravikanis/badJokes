@@ -12,6 +12,7 @@ const JokeContainer = styled.div`
   height: 80vh;
   margin-left: 20%;
   margin-right: 20%;
+  color: var(--tertiary-color);
 `;
 
 const Joke = () => {
@@ -33,11 +34,12 @@ const Joke = () => {
 
   return (
     <JokeContainer>
-      {randomJoke && <p>{randomJoke.joke}</p>}
+      {randomJoke.joke && <p>{randomJoke.joke}</p>}
       {randomJoke && (
         <>
-          <p>{randomJoke.setup} </p>
-          <p> {randomJoke.delivery}</p>
+          <p>{randomJoke.setup} ...</p>
+
+          <p>... {randomJoke.delivery}</p>
         </>
       )}
 

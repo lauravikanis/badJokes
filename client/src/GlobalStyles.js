@@ -6,7 +6,6 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 :root {
-  --titleFont: 'Raleway', sans-serif;
   --textFont: 'Raleway', sans-serif;
   --background: #ededed;
   --background-dark: #3d4849;
@@ -16,9 +15,11 @@ const GlobalStyle = createGlobalStyle`
   --secondary-color: #020F59; //darkblue
   --tertiary-color: #D9AA8F ; //sand
 }
+
+
 body {
   margin: 0 ;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: var(--textFont);
   background-color: var(--primary-color);
   }
  
@@ -28,7 +29,7 @@ p{
 
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--titleFont);
+  font-family: var(--textFont);
   color: var(--tertiary-color);
 
   font-weight: bold;
