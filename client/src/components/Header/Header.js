@@ -1,5 +1,6 @@
 import styled from "styled-components/macro";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -29,7 +30,9 @@ const HeaderContainer = styled.header`
 const Header = () => {
   return (
     <HeaderContainer>
-      <div>Backbutton</div>
+      <Link to="/">
+        <div>Backbutton</div>
+      </Link>
       <h1>badJokes 24/7</h1>
       <div>Submit</div>
     </HeaderContainer>
