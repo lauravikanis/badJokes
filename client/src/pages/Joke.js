@@ -20,7 +20,6 @@ const Joke = () => {
   async function handleClick() {
     const randomJokeResponse = await getRandomJoke();
     setRandomJoke(randomJokeResponse);
-    console.log(randomJokeResponse.setup);
     return { randomJokeResponse };
   }
 
