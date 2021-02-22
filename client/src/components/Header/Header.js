@@ -1,6 +1,9 @@
 import styled from "styled-components/macro";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -17,24 +20,22 @@ const HeaderContainer = styled.header`
   h1 {
     margin: 0;
     text-transform: none !important;
-  }
-
-  h4 {
-    margin: 0;
-    text-transform: none !important;
+    white-space: nowrap;
   }
 `;
+const HeaderIcon = styled(FontAwesomeIcon)`
+  font-size: 1.75rem;
+`;
+
 const Header = () => {
   return (
     <HeaderContainer>
+      <HeaderIcon icon={faHome} />
       <Link to="/">
-        <div>Backbutton</div>
-      </Link>
-      <Link to="/">
-        <h1>badJokes 24/7</h1>{" "}
+        <h1>badJokes 24/7</h1>
       </Link>
       <a href="https://github.com/lauravikanis/badJokes" target="_blank:">
-        <div>Feedback</div>
+        <HeaderIcon icon={faGithub} />
       </a>
     </HeaderContainer>
   );
