@@ -7,13 +7,10 @@ const HeaderContainer = styled.header`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
-  top: 0;
   padding: 1rem;
   background-color: var(--primary-color);
   color: darkblue;
   border-bottom: 2px solid var(--tertiary-color);
-  width: 60%;
   color: var(--tertiary-color);
   width: 100%;
 

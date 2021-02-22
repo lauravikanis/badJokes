@@ -10,7 +10,6 @@ const JokeContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 80vh;
   margin-left: 20%;
   margin-right: 20%;
   color: var(--tertiary-color);
