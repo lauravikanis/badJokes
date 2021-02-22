@@ -13,9 +13,10 @@ const JokeContainer = styled.div`
   margin-left: 20%;
   margin-right: 20%;
   color: var(--tertiary-color);
+  text-align: center;
 `;
 
-const Joke = () => {
+const RandomJoke = () => {
   const [randomJoke, setRandomJoke] = useState(null);
 
   async function handleClick() {
@@ -34,12 +35,12 @@ const Joke = () => {
 
   return (
     <JokeContainer>
-      {randomJoke.joke && <p>{randomJoke.joke}</p>}
+      {randomJoke && <p>{randomJoke.joke}</p>}
       {randomJoke && (
         <>
-          <p>{randomJoke.setup} ...</p>
+          <p>{randomJoke.setup}</p>
 
-          <p>... {randomJoke.delivery}</p>
+          <p>{randomJoke.delivery}</p>
         </>
       )}
 
@@ -49,4 +50,4 @@ const Joke = () => {
     </JokeContainer>
   );
 };
-export default Joke;
+export default RandomJoke;

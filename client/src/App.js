@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import GlobalStyle from "./GlobalStyles";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
-import Joke from "./pages/Joke";
+import RandomJoke from "./pages/RandomJoke";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Switch>
         <Route path="/random">
-          <Joke />
+          <RandomJoke />
         </Route>
         <Route path="/">
           <Home />

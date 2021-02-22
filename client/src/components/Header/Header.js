@@ -33,8 +33,12 @@ const Header = () => {
       <Link to="/">
         <div>Backbutton</div>
       </Link>
-      <h1>badJokes 24/7</h1>
-      <div>Submit</div>
+      <Link to="/">
+        <h1>badJokes 24/7</h1>{" "}
+      </Link>
+      <a href="https://github.com/lauravikanis/badJokes" target="_blank:">
+        <div>Feedback</div>
+      </a>
     </HeaderContainer>
   );
 };
