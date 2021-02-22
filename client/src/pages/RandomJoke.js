@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { getRandomJoke } from "../api/getRandomJoke";
 import Button from "../components/Button/Button";
+import Joke from "../components/Container/Joke";
 
 const JokeContainer = styled.div`
   display: flex;
@@ -9,13 +10,13 @@ const JokeContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 80vh;
   margin-left: 20%;
   margin-right: 20%;
   color: var(--tertiary-color);
+  text-align: center;
 `;
 
-const Joke = () => {
+const RandomJoke = () => {
   const [randomJoke, setRandomJoke] = useState(null);
 
   async function handleClick() {
@@ -34,19 +35,11 @@ const Joke = () => {
 
   return (
     <JokeContainer>
-      {randomJoke.joke && <p>{randomJoke.joke}</p>}
-      {randomJoke && (
-        <>
-          <p>{randomJoke.setup} ...</p>
-
-          <p>... {randomJoke.delivery}</p>
-        </>
-      )}
-
+      {randomJoke && <Joke Joke={randomJoke} />}
       <Button onClick={() => handleClick()}>
         <h2>Refresh Joke</h2>
       </Button>
     </JokeContainer>
   );
 };
-export default Joke;
+export default RandomJoke;

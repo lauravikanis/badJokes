@@ -3,21 +3,24 @@ import Home from "./pages/Home";
 import GlobalStyle from "./GlobalStyles";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
-import Joke from "./pages/Joke";
+import RandomJoke from "./pages/RandomJoke";
+import Layout from "./components/Layout/Layout";
 
 function App() {
   return (
     <Router>
       <GlobalStyle />
-      <Header />
-      <Switch>
-        <Route path="/random">
-          <Joke />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
+      <Layout>
+        <Header />
+        <Switch>
+          <Route path="/random">
+            <RandomJoke />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Layout>
     </Router>
   );
 }
