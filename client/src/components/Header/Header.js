@@ -30,7 +30,9 @@ const HeaderIcon = styled(FontAwesomeIcon)`
 const Header = () => {
   return (
     <HeaderContainer>
-      <HeaderIcon icon={faHome} />
+      <Link to="/">
+        <HeaderIcon icon={faHome} />
+      </Link>
       <Link to="/">
         <h1>badJokes 24/7</h1>
       </Link>
