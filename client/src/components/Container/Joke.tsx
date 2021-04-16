@@ -11,8 +11,8 @@ export const JokeContainer = styled.div`
   margin-bottom: 3rem;
 `;
 
-const Joke: React.ReactNode = (joke: {}) => {
-  return <JokeContainer>{joke}</JokeContainer>;
+const Joke: React.ReactNode = (joke: any) => {
+  return <JokeContainer>{joke.joke}</JokeContainer>;
 };
 
 export default Joke;

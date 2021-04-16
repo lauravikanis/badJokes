@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { getRandomJoke } from "../api/getRandomJoke";
 import Button from "../components/Button/Button";
@@ -33,9 +33,13 @@ const RandomJoke = () => {
     JokeFetch();
   }, []);
 
+  const newJoke: React.ReactNode = (Joke: any) => {
+    <Joke>{randomJoke}</Joke>;
+  };
+
   return (
     <JokeContainer>
-      {randomJoke && <Joke Joke={randomJoke} />}
+      {randomJoke && newJoke}
       <Button onClick={() => handleClick()}>
         <h2>Refresh Joke</h2>
       </Button>
