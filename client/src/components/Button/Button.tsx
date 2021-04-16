@@ -1,5 +1,4 @@
 import styled from "styled-components/macro";
-import PropTypes from "prop-types";
 
 const Button = styled.button`
   display: flex;
@@ -19,7 +18,4 @@ const Button = styled.button`
   }
 `;
 
-Button.propTypes = {
-  onClick: PropTypes.func,
-};
 export default Button;

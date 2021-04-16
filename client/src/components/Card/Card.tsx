@@ -1,5 +1,4 @@
 import styled from "styled-components/macro";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const Card = styled(Link)`
@@ -14,9 +13,5 @@ const Card = styled(Link)`
   width: 60%;
   margin: 5%;
 `;
-
-Card.propTypes = {
-  type: PropTypes.string,
-};
 
 export default Card;

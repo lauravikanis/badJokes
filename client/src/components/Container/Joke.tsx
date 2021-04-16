@@ -1,7 +1,7 @@
+import * as React from "react";
 import styled from "styled-components/macro";
-import PropTypes from "prop-types";
 
-const JokeContainer = styled.div`
+export const JokeContainer = styled.div`
   display: flex;
   font-family: "Yanone Kaffeesatz", sans-serif;
   flex-direction: column;
@@ -11,16 +11,8 @@ const JokeContainer = styled.div`
   margin-bottom: 3rem;
 `;
 
-const Joke = ({ Joke }) => {
-  return (
-    <JokeContainer>
-      <p>{Joke.joke}</p>
-    </JokeContainer>
-  );
+const Joke: React.ReactNode = (joke: {}) => {
+  return <JokeContainer>{joke}</JokeContainer>;
 };
 
 export default Joke;
-
-Joke.propTypes = {
-  Joke: PropTypes.object,
-};

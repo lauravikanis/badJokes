@@ -1,5 +1,5 @@
+import * as React from "react";
 import styled from "styled-components/macro";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
@@ -41,10 +41,6 @@ const Header = () => {
       </a>
     </HeaderContainer>
   );
-};
-
-Header.propTypes = {
-  type: PropTypes.string,
 };
 
 export default Header;

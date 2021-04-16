@@ -5,6 +5,7 @@
   "description": "a page fo your favourite bad jokes",
   "main": "index.js",
   "dependencies": {
+    "@types/styled-components": "^5.1.9",
     "concurrently": "^5.3.0",
     "express": "^4.17.1",
     "immer": "^8.0.1",
@@ -16,6 +17,7 @@
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
+    "@types/react-router-dom": "^5.1.7",
     "@typescript-eslint/eslint-plugin": "^4.8.1",
     "@typescript-eslint/parser": "^4.8.1",
     "babel-eslint": "^10.1.0",
