@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { getRandomJoke } from "../api/getRandomJoke";
 import Button from "../components/Button/Button";
-import Joke from "../components/Container/Joke";
 
 const JokeContainer = styled.div`
   display: flex;
@@ -16,14 +15,13 @@ const JokeContainer = styled.div`
   text-align: center;
 `;
 
-const RandomJoke = () => {
+const RandomJoke: any = () => {
   const [randomJoke, setRandomJoke] = useState(null);
 
-  async function handleClick() {
+  const handleClick: () => void = async () => {
     const randomJokeResponse = await getRandomJoke();
     setRandomJoke(randomJokeResponse);
-    return { randomJokeResponse };
-  }
+  };
 
   useEffect(() => {
     async function JokeFetch() {
@@ -33,13 +31,9 @@ const RandomJoke = () => {
     JokeFetch();
   }, []);
 
-  const newJoke: React.ReactNode = (Joke: any) => {
-    <Joke>{randomJoke}</Joke>;
-  };
-
   return (
     <JokeContainer>
-      {randomJoke && newJoke}
+      {randomJoke}
       <Button onClick={() => handleClick()}>
         <h2>Refresh Joke</h2>
       </Button>

@@ -5,5 +5,5 @@ export async function getRandomJoke() {
     throw new Error(message);
   }
   const randomJoke = await response.json();
-  return randomJoke;
+  return randomJoke.joke;
 }

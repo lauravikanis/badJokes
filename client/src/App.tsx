@@ -6,7 +6,7 @@ import Header from "./components/Header/Header";
 import RandomJoke from "./pages/RandomJoke";
 import Layout from "./components/Layout/Layout";
 
-const App = () => {
+const App: any = () => {
   return (
     <Router>
       <GlobalStyle />
